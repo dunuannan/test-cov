@@ -122,9 +122,5 @@ def get_hot_data():
     return res
 
 
-def test():
-    pass
-
-
 if __name__ == "__main__":
     print(get_hot_data())
