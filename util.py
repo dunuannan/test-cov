@@ -16,7 +16,7 @@ def get_conn():
     conn = pymysql.connect(host="cdb-l4vaj5m4.bj.tencentcdb.com",
                            port=10048,
                            user="root",
-                           password="Dnn+12055693",
+                           password="",
                            db="cov")
     # 创建游标，默认是元组型
     cursor = conn.cursor()
