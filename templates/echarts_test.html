@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ECharts Test</title>
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
+    <script src="../static/js/echarts.min.js"></script>
+  </head>
+  <body>
+    <div id="main" style="width: 800px; height: 600px;"></div>
+    <script>
+      var myChart = echarts.init(document.getElementById("main"));
+      var option = {
+        xAxis: {
+          type: "category",
+          data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        },
+        yAxis: {
+          type: "value"
+        },
+        series: [
+          {
+            data: [820, 932, 901, 934, 1290, 1330, 1320],
+            type: "line"
+          }
+        ]
+      };
+      myChart.setOption(option);
+    </script>
+  </body>
+</html>
