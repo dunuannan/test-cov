@@ -1,12 +1,11 @@
 import json
+import sys
 import time
 import traceback
 
 import pymysql
 import requests
 from selenium.webdriver import Chrome, ChromeOptions
-
-import sys
 
 
 def get_conn():
@@ -198,8 +197,6 @@ def get_baidu_hot():
     # 找到热搜标签
     infos = browser.find_elements_by_xpath('//*[@id="ptab-0"]/div/div[2]/section/a/div/span[2]')
     context = [i.text for i in infos]
-    print(context)
-
     return context
 
 
